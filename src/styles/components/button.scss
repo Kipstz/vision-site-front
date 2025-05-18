@@ -1,0 +1,36 @@
+.btn {
+  padding: 20px 80px;
+  border: none;
+  position: relative;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 35px;
+  color: white;
+  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.337) 0px 0px 10px 1px;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #fb9d04 0%, #b74200 50%, #b74200 50%, rgb(236, 108, 34) 100%);
+  background-position: 100% 100%;
+  background-size: 100% 200%;
+  // &::before {
+  //   position: absolute;
+  //   content: '';
+  //   height: 100%;
+  //   border: 3px solid white;
+  //   top: -12px;
+  //   width: 100%;
+  //   left: 3px;
+  //   pointer-events: none;
+  //   transition: 0.3s;
+  // }
+
+  &:hover {
+    cursor: pointer;
+    background-position: 0% 0%;
+    scale: 1.05
+  }
+
+  &:active {
+    scale: 0.9;
+  }
+}

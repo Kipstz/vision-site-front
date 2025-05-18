@@ -1,0 +1,29 @@
+.selections__wrapper {
+  display: flex;
+  padding: 5px;
+  gap: 10px;
+  border-radius: 5px;
+
+  .selections__item {
+    border-radius: 5px;
+    padding: 15px 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    background: rgba(white, 0.05);
+    border: 1px solid rgba(white, 0.05);
+    font-weight: 900;
+    user-select: none;
+
+    &.--selected {
+      background: linear-gradient(180deg, #fb9d04 0%, #b74200 100%);
+    }
+
+    &:hover {
+      scale: 1.05;
+    }
+
+    &:active {
+      scale: 0.95;
+    }
+  }
+}

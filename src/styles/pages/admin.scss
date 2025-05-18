@@ -1,0 +1,410 @@
+.adminPage {
+  background: linear-gradient(179.17deg, rgba(167, 6, 6, 0.92) 8.3%, rgba(28, 10, 0, 0.84) 103.74%);
+
+  .Rules {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    gap: 10px;
+
+    img {
+      max-width: 100px;
+    }
+
+    .adminButton {
+      margin-bottom: 10px;
+      max-width: 300px;
+      margin: auto;
+    }
+
+    .Main {
+      height: 100px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.25);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      cursor: pointer;
+
+      svg {
+        width: 250px;
+        height: 50px;
+        margin-top: 10px;
+      }
+    }
+
+    textarea {
+      width: 80%;
+    }
+
+    .RulesButtonContainer {
+      margin-top: 10px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .RulesContainer {
+      min-height: 100px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.25);
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-bottom: 10px;
+      padding-top: 10px;
+
+      svg {
+        width: 250px;
+        height: 50px;
+        margin-top: 10px;
+      }
+    }
+
+    .RulesSubContainer {
+      min-height: 100px;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.25);
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 10px auto;
+      width: 80%;
+      padding-bottom: 10px;
+      padding-top: 10px;
+
+      svg {
+        width: 250px;
+        height: 50px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .container {
+    display: flex;
+    margin-left: 20rem;
+    margin-top: 7rem;
+    margin-bottom: 6.8rem;
+
+  }
+
+  .button-category button {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 17rem;
+    height: 8rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+  }
+
+  #button1 {
+    padding: 3rem;
+    background: linear-gradient(180deg, #33963C 0%, #004E1F 100%);
+    padding-left: 3.5rem;
+  }
+
+  #button2 {
+    padding: 3rem;
+    background: linear-gradient(180deg, #F8B127 0%, #753D00 100%);
+    padding-left: 4.4rem;
+  }
+
+  #button3 {
+    padding: 3rem;
+    background: linear-gradient(180deg, #AC0006 0%, #590004 100%);
+    padding-left: 3.5rem;
+  }
+
+
+  #button4 {
+    padding: 3rem;
+    background: linear-gradient(180deg, #7C0DCE 0%, #2A0049 100%);
+    padding-left: 3.5rem;
+    padding-top: 3.2rem;
+    margin-bottom: 2rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    /* position: relative; */
+  }
+
+  .bloc-formulaire {
+    background: linear-gradient(0deg, rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.8));
+    width: 50rem;
+    height: 32rem;
+  }
+
+  .button-formulaire {
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  .button-formulaire button {
+    width: 20%;
+    height: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+  }
+
+  .button-add {
+    background: linear-gradient(rgb(51, 150, 60), rgb(11, 72, 16));
+    border-radius: 6px 0px 0px 6px;
+  }
+
+  .button-update {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(157, 157, 157, 0.35) 100%);
+  }
+
+  .button-delete {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(157, 157, 157, 0.35) 100%);
+    border-radius: 0px 6px 6px 0px;
+  }
+
+  .label {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-left: 10rem;
+    margin-top: 2.5rem;
+  }
+
+  .forms input {
+    width: 30%;
+    margin-left: 10rem;
+    margin-top: 1rem;
+  }
+
+  .input-white {
+    color: white;
+  }
+
+  .ajout {
+    width: 10rem;
+    height: 3rem;
+    margin-left: 35rem;
+    border-radius: 8px;
+    background: linear-gradient(rgb(51, 150, 60), rgb(11, 72, 16));
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    /* position: absolute; */
+  }
+
+  .main {
+    width: 100%;
+    min-height: 900px;
+    display: flex;
+  }
+
+  .categories {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    overflow: auto;
+
+    .category {
+      width: 100%;
+      margin: 0 auto;
+      text-transform: uppercase;
+      height: 100px;
+      display: flex;
+      background: linear-gradient(180deg, #727272 0%, #474747 100%);
+      border-radius: 0px;
+      justify-content: center;
+      align-items: center;
+      background-color: #8c8c8c;
+      color: white;
+      cursor: pointer;
+
+      span {
+        background: linear-gradient(180deg, #FFFFFF 0%, #C7C7C7 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+        font-size: 20px;
+        font-weight: 800;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+
+      &:hover,
+      &.selected {
+        background: linear-gradient(180deg, #33963C 0%, #004E1F 100%);
+      }
+    }
+  }
+
+  textarea {
+    width: 500px;
+    height: 200px;
+  }
+
+  .current {
+    flex: 1 1 auto;
+    background: linear-gradient(0deg, rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.8));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tabs {
+    margin-top: 20px;
+    display: flex;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(157, 157, 157, 0.35) 100%);
+    font-size: 20px;
+
+    .tab {
+      padding: 15px;
+      cursor: pointer;
+
+      span {
+        color: #FFFFFF;
+      }
+
+      &.selected,
+      &:hover {
+        background: linear-gradient(180deg, rgba(30, 180, 90, 1) 0%, rgba(0, 72, 7, 1) 100%);
+      }
+    }
+  }
+
+  .adminTooltip {
+    margin-left: 10px;
+  }
+
+  .adminButton {
+    background: linear-gradient(180deg, #33963C 0%, #004E1F 100%);
+    padding: 15px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 10px;
+  }
+
+  .adminText {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(157, 157, 157, 0.15) 100%);
+      border-radius: 3px;
+      outline: none !important;
+      border: none !important;
+      height: 40px;
+      width: 400px;
+      padding-left: 5px;
+      color: white;
+      font-size: 19px;
+      align-items: center;
+      margin-top: 5px;
+    }
+  }
+
+  .MuiInputBase-input {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(157, 157, 157, 0.15) 100%);
+    border-radius: 3px;
+    outline: none !important;
+    border: none !important;
+    height: 40px;
+    width: 400px;
+    padding-left: 5px;
+    color: white;
+    font-size: 19px;
+    align-items: center;
+    margin-top: 5px;
+    box-sizing: border-box;
+  }
+
+  .MuiOutlinedInput-root {
+    border: none;
+
+    fieldset {
+      display: none;
+    }
+  }
+
+  .adminLabel,
+  .MuiTypography-root,
+  .MuiTypography-body2 {
+    text-transform: uppercase;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+  textarea {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(157, 157, 157, 0.15) 100%);
+    border-radius: 3px;
+    outline: none !important;
+    border: none !important;
+    padding: 3px;
+    height: 200px;
+    width: 400px;
+    color: white;
+    font-size: 19px;
+    align-items: center;
+    margin-top: 5px;
+    box-sizing: border-box;
+    resize: none;
+  }
+
+  .adminSelect {
+    .MuiAutocomplete-root {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(157, 157, 157, 0.15) 100%);
+      border-radius: 3px;
+      outline: none !important;
+      border: none !important;
+      height: 40px;
+      width: 400px;
+      color: white;
+      font-size: 19px;
+      align-items: center;
+      margin-top: 5px;
+      box-sizing: border-box;
+
+      .MuiAutocomplete-endAdornment {
+        transform: translateY(-5px);
+      }
+
+      svg {
+        color: white;
+      }
+
+      & * {
+        height: 40px;
+        padding: 0;
+        margin: 0;
+      }
+
+      input {
+        padding-left: 5px;
+        background: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.BoutiquePacks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 40px;
+
+    &>* {
+        font-family: Montserrat !important;
+    }
+}

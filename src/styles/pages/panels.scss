@@ -1,0 +1,158 @@
+.panels__wrapper {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(#08152F, #1B1B1B);
+
+  .title {
+    color: white;
+    font-weight: bold;
+    max-width: 1190px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .title h1 {
+    font-size: 2rem;
+  }
+
+  .title h2 {
+    font-size: 1.3rem;
+  }
+
+
+  .titre-entreprise h3 {
+    color: white;
+    font-weight: bold;
+    max-width: 1190px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+  }
+
+  .sp-lifeinvader {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1190px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+
+
+
+  .pictures-logo {
+    width: 12rem;
+  }
+
+  .picture-lifeinvader {
+    width: 12rem;
+  }
+
+  .logo-sp {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .logo_entreprises {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  .titre-panel {
+    color: white;
+    font-size: 1rem;
+  }
+
+
+
+  .top,
+  .bottom {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 30px;
+    gap: 20px;
+    justify-content: space-between;
+
+    .sub-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px
+    }
+
+    ._container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    span {
+      font-size: 12px;
+      padding: 3px 0px;
+    }
+
+    h3 {
+      margin-bottom: 6px;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      margin: auto;
+      margin-top: 5%;
+      aspect-ratio: 1 / 1;
+    }
+
+    .link-container {
+      display: flex;
+      border-radius: 1px;
+
+      .link-element {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+
+        img {
+          width: 100%;
+          margin: auto;
+        }
+      }
+    }
+  }
+
+  .bottom {
+    margin-bottom: 20px;
+    margin-top: 60px;
+  }
+}

@@ -1,0 +1,16 @@
+.music__artistes__search {
+  background: rgba(black, 0.2);
+  border-radius: 10px;
+  border: none;
+  width: 400px;
+  height: 50px;
+  padding: 5px 10px;
+  border: 1px solid rgba(white, 0);
+  transition: 0.3s;
+  color: white;
+
+  &:focus {
+    border: 1px solid rgba(black, 0.3);
+    outline: none;
+  }
+}

@@ -1,0 +1,145 @@
+.pager {
+  display: flex;
+  flex-direction: column;
+
+  .pager__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    flex-direction: column;
+    min-height: 550px;
+    cursor: pointer;
+
+    & img {
+      transition: 0.3s;
+    }
+
+    &:hover img {
+      filter: grayscale(0.5);
+      scale: 1.1;
+    }
+
+    div {
+      background-color: white;
+      padding: 4px 10px;
+      transition: 0.3s;
+
+      h1 {
+        font-style: normal;
+        font-weight: 900;
+        transition: 0.3s;
+        font-size: 50px;
+      }
+    }
+
+    &.events {
+      h1 {
+        background: linear-gradient(180deg, #1eb45a 0%, #33963c 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+    }
+
+    &.music {
+      h1 {
+        background: linear-gradient(180deg, #fbbc04 0%, #fb8904 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+    }
+
+    &.news {
+      h1 {
+        background: linear-gradient(180deg, #e01f1f 0%, #c21a20 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+    }
+
+    &.panel {
+      h1 {
+        background: linear-gradient(180deg, #1f52b5 0%, #3d5eb5 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+    }
+
+    &.twitch {
+      h1 {
+        background: linear-gradient(180deg, #7b0ccd 0%, #5d06aa 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+    }
+
+    .item__description {
+      position: absolute;
+      bottom: 20px;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 25px;
+      line-height: 44px;
+      color: white;
+      letter-spacing: 0.5px;
+      text-align: center;
+    }
+
+    img {
+      position: absolute;
+      object-fit: cover;
+      width: 100%;
+      top: 0;
+      left: 0;
+      height: 100%;
+      z-index: -1;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+@media screen and (max-width: 1445px) {
+  .pager {
+    .top {
+      flex-direction: column;
+    }
+
+    .bottom {
+      .pager__item {
+        flex: 1 !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .pager {
+    .bottom {
+      flex-direction: column;
+    }
+  }
+}

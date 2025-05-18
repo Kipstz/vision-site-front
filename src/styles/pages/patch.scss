@@ -1,0 +1,134 @@
+div.patch {
+  background: linear-gradient(
+    179.63deg,
+    rgba(167, 6, 6, 0.92) 0.28%,
+    rgba(208, 46, 13, 0.8) 76.87%,
+    rgba(255, 92, 0, 1) 99.63%
+  );
+  min-height: calc(100vh - $--misc-header-height);
+  padding: 3% 4%;
+
+  .header__patch {
+    h1 {
+      font-size: 2.5rem;
+      color: white;
+      font-weight: 900;
+    }
+
+    span {
+      font-weight: 900;
+      font-size: 1.5rem;
+      color: white;
+    }
+  }
+
+  .patch__content {
+    margin-top: 5px;
+    gap: 20px;
+    align-items: center;
+    aspect-ratio: 100/50;
+
+    iframe {
+      aspect-ratio: 100/50;
+      width: 100%;
+    }
+
+    .img__wrapper {
+      display: flex;
+      padding: 10px;
+      background: linear-gradient(
+        180deg,
+        rgba(251, 188, 4, 0.5) 0%,
+        rgba(248, 148, 39, 0.5) 100%
+      );
+      box-shadow: 0px 0px 62.8888px 7.18729px rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+      width: 80%;
+
+      img {
+        width: 100%;
+        border-radius: 15px;
+      }
+    }
+
+    .last__patchs {
+      gap: 20px;
+      padding: 10px 20px;
+      overflow-y: auto;
+      overflow-x: hidden;
+      align-items: center;
+
+      .patch {
+        width: 300px;
+        border: 1px solid rgba(white, 0.15);
+        border-radius: 17px;
+        padding: 10px;
+        flex: 1;
+        min-height: 90px !important;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+        cursor: pointer;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 30px;
+        color: white;
+        font-weight: 900;
+        box-shadow: 0 0 10px 2px rgba(black, 0.2);
+        gap: 3px;
+
+        p {
+          font-size: 15px;
+          font-weight: 600;
+        }
+
+        &:hover {
+          scale: 1.05;
+        }
+
+        &:active {
+          scale: 0.95;
+        }
+
+        &.--selected {
+          background: linear-gradient(
+            180deg,
+            rgba(251, 188, 4, 0.75) 0%,
+            rgba(251, 137, 4, 0.75) 100%
+          );
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .patch {
+    .patch__content {
+      flex-direction: column;
+      aspect-ratio: auto !important;
+    }
+
+    .img__wrapper {
+      width: 100% !important;
+    }
+
+    .last__patchs {
+      flex-direction: row !important;
+      flex-wrap: wrap !important;
+      padding: 10px;
+      justify-content: center;
+    }
+
+    .patch {
+      min-width: 230px !important;
+      max-width: 230px !important;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .header__patch {
+    flex-direction: column;
+  }
+}
